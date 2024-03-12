@@ -1,0 +1,28 @@
+.asocijacije-wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.kolona-asocijacija {
+  height: fit-content;
+  max-width: 200px;
+  width: 400px;
+}
+
+.red-asocijacija {
+  height: 50px;
+}
+
+.red-asocijacija {
+  border: 2px solid black;
+  margin-bottom: 2px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}

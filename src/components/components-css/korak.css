@@ -1,0 +1,36 @@
+.koraci-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.korak {
+  width: 90%;
+  margin-bottom: 15px;
+  height: 60px;
+  user-select: none;
+  background-color: #454545;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20pt;
+
+  transition: transform, font-size;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
+
+.korak-hide {
+  font-size: 0;
+}
+
+.korak:active {
+  transform: scale(0.98);
+}
+
+.korak-last {
+  margin-bottom: 0;
+}

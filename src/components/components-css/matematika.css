@@ -1,0 +1,59 @@
+.slova-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.slovo {
+  height: 70px;
+  margin-right: 10px;
+  aspect-ratio: 1/1;
+  background-color: #454545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40pt;
+  user-select: none;
+
+  transition: font;
+  transition-timing-function: ease;
+  transition-duration: 800ms;
+}
+
+.matm-desetina {
+  margin-left: 50px;
+  min-width: 100px;
+}
+
+.matm-trazeni {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.matm-stotina {
+  min-width: 150px;
+}
+
+.slovo-last {
+  margin-right: 0;
+}
+
+.slovo-hidden {
+  font-size: 0;
+}
+
+.slova-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-slova-stop {
+  align-self: center;
+  margin-top: 150px;
+  background-color: #202020;
+
+  color: white;
+}
