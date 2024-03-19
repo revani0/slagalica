@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/slagalica/static/css/main.4b4e2a26.css",
-    "main.js": "/slagalica/static/js/main.fe80df74.js",
+    "main.css": "/slagalica/static/css/main.937ad96f.css",
+    "main.js": "/slagalica/static/js/main.8e05009d.js",
     "static/js/453.016c43ca.chunk.js": "/slagalica/static/js/453.016c43ca.chunk.js",
     "static/media/6136231_slagalica-logojpg.jpg": "/slagalica/static/media/6136231_slagalica-logojpg.aa8250ef48765d520fe7.jpg",
     "index.html": "/slagalica/index.html",
-    "main.4b4e2a26.css.map": "/slagalica/static/css/main.4b4e2a26.css.map",
-    "main.fe80df74.js.map": "/slagalica/static/js/main.fe80df74.js.map",
+    "main.937ad96f.css.map": "/slagalica/static/css/main.937ad96f.css.map",
+    "main.8e05009d.js.map": "/slagalica/static/js/main.8e05009d.js.map",
     "453.016c43ca.chunk.js.map": "/slagalica/static/js/453.016c43ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b4e2a26.css",
-    "static/js/main.fe80df74.js"
+    "static/css/main.937ad96f.css",
+    "static/js/main.8e05009d.js"
   ]
 }
