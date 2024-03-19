@@ -2,115 +2,32 @@ import React from "react";
 import "./components-css/matematika.css";
 import { useState } from "react";
 
-function Matematika({ toggle }) {
+function Matematika({ numbers }) {
   const [hideSlova, sethideSlova] = useState(true);
   return (
     <>
-      {toggle ? (
-        <>
-          <div className="slova-main">
-            <div className="matm-trazeni">
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                9
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                1
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                4
-              </div>
+      <div className="matematika-main">
+        <div className="matm-trazeni">
+          {numbers[0].map((e) => (
+            <div className={`broj ${hideSlova ? "broj-hidden" : ""}`}>{e}</div>
+          ))}
+        </div>
+        <div className="brojevi-wrap">
+          {numbers[1].map((e) => (
+            <div className={`broj ponudjeni ${hideSlova ? "broj-hidden" : ""}`}>
+              {e}
             </div>
-            <div className="slova-wrap">
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                3
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                1
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                6
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                7
-              </div>
-              <div
-                className={`slovo matm-desetina ${
-                  hideSlova ? "slovo-hidden" : ""
-                }`}
-              >
-                20
-              </div>
-              <div
-                className={`slovo slovo-last matm-stotina ${
-                  hideSlova ? "slovo-hidden" : ""
-                }`}
-              >
-                50
-              </div>
-            </div>
-            <div
-              className="btn btn-slova-stop"
-              onClick={() => {
-                sethideSlova(!hideSlova);
-              }}
-            >
-              Stop
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="slova-main">
-            <div className="matm-trazeni">
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                2
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                9
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                6
-              </div>
-            </div>
-            <div className="slova-wrap">
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                8
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                1
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                9
-              </div>
-              <div className={`slovo ${hideSlova ? "slovo-hidden" : ""}`}>
-                3
-              </div>
-              <div
-                className={`slovo matm-desetina ${
-                  hideSlova ? "slovo-hidden" : ""
-                }`}
-              >
-                15
-              </div>
-              <div
-                className={`slovo slovo-last matm-stotina ${
-                  hideSlova ? "slovo-hidden" : ""
-                }`}
-              >
-                50
-              </div>
-            </div>
-            <div
-              className="btn btn-slova-stop"
-              onClick={() => {
-                sethideSlova(!hideSlova);
-              }}
-            >
-              Stop
-            </div>
-          </div>
-        </>
-      )}
+          ))}
+        </div>
+        <div
+          className="btn btn-broj-stop"
+          onClick={() => {
+            sethideSlova(!hideSlova);
+          }}
+        >
+          Stop
+        </div>
+      </div>
     </>
   );
 }

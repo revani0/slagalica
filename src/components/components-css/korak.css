@@ -31,6 +31,6 @@
   transform: scale(0.98);
 }
 
-.korak-last {
+.korak:last-child {
   margin-bottom: 0;
 }

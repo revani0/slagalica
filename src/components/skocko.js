@@ -2,36 +2,16 @@ import React from "react";
 import "./components-css/skocko.css";
 import SkockoRed from "./skocko-red";
 
-const resenje = ["2", "1", "6", "6"];
-const resenje1 = ["5", "6", "5", "4"];
-
-function Skocko({ toggle }) {
+function Skocko({ kombinacija }) {
   return (
-    <>
-      {toggle ? (
-        <>
-          <div className="skocko-wrap">
-            <SkockoRed res={resenje} />
-            <SkockoRed res={resenje} />
-            <SkockoRed res={resenje} />
-            <SkockoRed res={resenje} />
-            <SkockoRed res={resenje} />
-            <SkockoRed res={resenje} />
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="skocko-wrap">
-            <SkockoRed res={resenje1} />
-            <SkockoRed res={resenje1} />
-            <SkockoRed res={resenje1} />
-            <SkockoRed res={resenje1} />
-            <SkockoRed res={resenje1} />
-            <SkockoRed res={resenje1} />
-          </div>
-        </>
-      )}
-    </>
+    <div className="skocko-wrap">
+      {Array.from({ length: 6 }, (_, index) => (
+        <SkockoRed res={kombinacija} />
+      ))}
+      <div className="avoid-bug">
+        <div className="child-ele"></div>
+      </div>
+    </div>
   );
 }
 

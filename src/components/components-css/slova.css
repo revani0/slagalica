@@ -22,7 +22,7 @@
   transition-duration: 800ms;
 }
 
-.slovo-last {
+.slovo:last-child {
   margin-right: 0;
 }
 

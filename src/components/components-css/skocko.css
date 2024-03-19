@@ -50,6 +50,19 @@
   background-color: rgb(82, 114, 197);
 }
 
-.skocko-slot-last {
+.res-slot:last-child {
   margin-right: 0;
+}
+
+.skocko-slot:last-child {
+  margin-right: 0;
+}
+
+.ulaz {
+  position: absolute;
+  user-select: none;
+  transform: translate(-150%, calc(31px - 50%));
+  color: white;
+  font-size: 16pt;
+  font-weight: bold;
 }

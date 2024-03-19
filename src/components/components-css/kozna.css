@@ -1,0 +1,13 @@
+.KoZna {
+  color: white;
+  font-weight: bold;
+  user-select: none;
+}
+
+.kozna-wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
