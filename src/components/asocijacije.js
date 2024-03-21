@@ -235,7 +235,7 @@ function Asocijacije({ Asocijacije }) {
           }
         }}
       >
-        Finalno
+        Konačno
       </div>
     </div>
   );

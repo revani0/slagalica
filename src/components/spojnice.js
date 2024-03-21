@@ -1,7 +1,6 @@
 import React from "react";
 import "./components-css/spojnice.css";
 import { useState } from "react";
-import { act } from "react-dom/test-utils";
 
 function Spojnice({ Spojnice }) {
   const [active, setActive] = useState(0);
@@ -27,18 +26,18 @@ function Spojnice({ Spojnice }) {
               onClick={(e) => {
                 if (Spojnice[2][active] == e.currentTarget.id) {
                   e.currentTarget.classList.add("correct");
+                  e.currentTarget.parentElement.previousSibling.childNodes[
+                    active
+                  ].style.backgroundColor = "green";
                   e.currentTarget.style.backgroundColor = "green";
                   if (active !== 10) {
                     setActive(active + 1);
                   }
                 } else {
-                  if (
-                    !e.currentTarget.classList.contains("correct") &&
-                    active < 10
-                  ) {
-                    e.currentTarget.style.backgroundColor = "red";
+                  if (!e.currentTarget.classList.contains("correct")) {
                     if (active !== 10) {
                       setActive(active + 1);
+                      e.currentTarget.style.backgroundColor = "red";
                     }
                   }
                 }
