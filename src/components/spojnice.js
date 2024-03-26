@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function Spojnice({ Spojnice }) {
   const [active, setActive] = useState(0);
+
   return (
     <>
       <div className="spojnice-wrap">
@@ -29,16 +30,10 @@ function Spojnice({ Spojnice }) {
                   e.currentTarget.parentElement.previousSibling.childNodes[
                     active
                   ].style.backgroundColor = "green";
-                  e.currentTarget.style.backgroundColor = "green";
-                  if (active !== 10) {
-                    setActive(active + 1);
-                  }
+                  setActive(active + 1);
                 } else {
                   if (!e.currentTarget.classList.contains("correct")) {
-                    if (active !== 10) {
-                      setActive(active + 1);
-                      e.currentTarget.style.backgroundColor = "red";
-                    }
+                    setActive(active + 1);
                   }
                 }
               }}

@@ -116,111 +116,287 @@ function App() {
   //   "Azija",
   // ];
 
+  // //PITANJA:
+  // //SLOVA
+  // const slova1 = ["O", "I", "M", "J", "I", "LJ", "A", "N", "R", "U", "N", "T"];
+  // const slova2 = ["D", "I", "E", "J", "N", "F", "R", "A", "T", "P", "N", "U"];
+  // //BROJEVI
+  // const brojevi1 = [
+  //   [7, 7, 2],
+  //   [5, 6, 7, 4, 20, 75],
+  // ];
+  // const brojevi2 = [
+  //   [1, 3, 9],
+  //   [4, 5, 4, 6, 15, 75],
+  // ];
+  // //KORAK PO KORAK
+  // const korak1 = [
+  //   `Može se odnositi na kalijum ili gvoždje...`,
+  //   `...Energiju...`,
+  //   `...Različite hormone...`,
+  //   `...Skuvane špagete...`,
+  //   `...Ili kilograme...`,
+  //   `Može da bude tehnološki.`,
+  //   `Prema poslovici, od njega glava ne boli.`,
+  // ]; //POREZ
+  // const korak2 = [
+  //   `Imaju ga operativni sistemi.`,
+  //   `Imaju ga gradovi.`,
+  //   `Koren je prideva u značenju "Koncizan".`,
+  //   `Ime je filma o bombardovanju središta zemlje.`,
+  //   `Imaju ga atomi.`,
+  //   `Imaju ga koštice različitog voća.`,
+  //   `Latinski sinonim za njega je "Nukleus".`,
+  // ]; //SNAGA
+  // //SKOCKO
+  // const skocko1 = ["6", "5", "4", "4"];
+  // const skocko2 = ["2", "3", "2", "3"];
+  // //KO ZNA ZNA
+  // //SPOJNICE
+  // const spojnice1 = [
+  //   [
+  //     "Imperator",
+  //     "Integral",
+  //     "Italik",
+  //     "Irigator",
+  //     "Inspicijent",
+  //     "Ilativ",
+  //     "Influks",
+  //     "Inkubus",
+  //     "Inciziv",
+  //     "Invar",
+  //   ],
+  //   [
+  //     "Zub sekutić", //1
+  //     "Kosa štamparska slova", //2
+  //     "Saradnik u pozorištu", //3
+  //     "Posuda za ispiranje delova tela", //4
+  //     "Uticaj, upliv, delovanje", //5
+  //     "Vrhovni vladar, car", //6
+  //     "Pojam iz matematičke analize", //7
+  //     "Legura čelika i nikla", //8
+  //     "Vrsta muškog demona", //9
+  //     "Padež ugrofinskom jeziku", //10
+  //   ],
+  //   ["6", "7", "2", "4", "3", "10", "5", "9", "1", "8"],
+  // ];
+  // const spojnice2 = [
+  //   [
+  //     "Presovati",
+  //     "Plandovati",
+  //     "Pečalbaritit",
+  //     "Pledirati",
+  //     "Pasirati",
+  //     "Perforirati",
+  //     "Pabirčiti",
+  //     "Profanisati",
+  //     "Pulverizovati",
+  //     "Pirjaniti",
+  //   ],
+  //   [
+  //     "Raditi u tudjini", //1
+  //     "Skrnaviti, sramotiti", //2
+  //     "Zastupati neku stvar", //3
+  //     "Skupljati iz više izovra", //4
+  //     "Bušiti, probijati rupice", //5
+  //     "Pritiskati radi ravnanja", //6
+  //     "Cediti hranu kroz sito", //7
+  //     "Odmarati se, izležavati se", //8
+  //     "Kuvati jelo u pari, dinstati", //9
+  //     "Pretvarati u prah, raspršivati", //10
+  //   ],
+  //   [6, 8, 1, 3, 7, 5, 4, 2, 10, 9],
+  // ];
+  // //ASOCIJACIJE
+  // const asocijacije1 = [
+  //   ["Društvo", "Bananica", "Čorba", "Euro", "Krem"],
+  //   ["Američka", "Španska", "Krompir", "Meso", "Pita"],
+  //   ["Crna", "Bilijar", "Jama", "Kaiš", "Rupa"],
+  //   ["Zub", "Litar", "Kafa", "Telo", "Mleko"],
+  //   "Sir",
+  // ];
+  // const asocijacije2 = [
+  //   ["Groznica", "Semafor", "Pun", "Prazan", "Stadion"],
+  //   ["Tepih", "Bicikl", "Koza", "Slava", "Staza"],
+  //   ["Veliko", "Peta", "Prsti", "Taban", "Stopalo"],
+  //   ["Sparta", "Kičma", "Komisija", "Postupak", "Disciplina"],
+  //   "Atletika",
+  // ];
+
+  // //PITANJA:
+  // //SLOVA
+  // const slova1 = ["", "", "", "", "", "", "", "", "", "", "", ""];
+  // const slova2 = ["", "", "", "", "", "", "", "", "", "", "", ""];
+  // //BROJEVI
+  // const brojevi1 = [
+  //   [, ,],
+  //   [, , , , ,],
+  // ];
+  // const brojevi2 = [
+  //   [, ,],
+  //   [, , , , ,],
+  // ];
+  // //KORAK PO KORAK
+  // const korak1 = [``, ``, ``, ``, ``, ``, ``]; //
+  // const korak2 = [``, ``, ``, ``, ``, ``, ``]; //
+  // //SKOCKO
+  // const skocko1 = ["6", "5", "4", "4"];
+  // const skocko2 = ["2", "3", "2", "3"];
+  // //KO ZNA ZNA
+  // //SPOJNICE
+  // const spojnice1 = [
+  //   ["", "", "", "", "", "", "", "", "", ""],
+  //   [
+  //     "", //1
+  //     "", //2
+  //     "", //3
+  //     "", //4
+  //     "", //5
+  //     "", //6
+  //     "", //7
+  //     "", //8
+  //     "", //9
+  //     "", //10
+  //   ],
+  //   ["", "", "", "", "", "", "", "", "", ""],
+  // ];
+  // const spojnice2 = [
+  //   ["", "", "", "", "", "", "", "", "", ""],
+  //   [
+  //     "", //1
+  //     "", //2
+  //     "", //3
+  //     "", //4
+  //     "", //5
+  //     "", //6
+  //     "", //7
+  //     "", //8
+  //     "", //9
+  //     "", //10
+  //   ],
+  //   ["", "", "", "", "", "", "", "", "", ""],
+  // ];
+  // //ASOCIJACIJE
+  // const asocijacije1 = [
+  //   ["", "", "", "", ""],
+  //   ["", "", "", "", ""],
+  //   ["", "", "", "", ""],
+  //   ["", "", "", "", ""],
+  //   "",
+  // ];
+  // const asocijacije2 = [
+  //   ["", "", "", "", ""],
+  //   ["", "", "", "", ""],
+  //   ["", "", "", "", ""],
+  //   ["", "", "", "", ""],
+  //   "",
+  // ];
+
   //PITANJA:
   //SLOVA
-  const slova1 = ["O", "I", "M", "J", "I", "LJ", "A", "N", "R", "U", "N", "T"];
-  const slova2 = ["D", "I", "E", "J", "N", "F", "R", "A", "T", "P", "N", "U"];
+  const slova1 = ["T", "N", "E", "H", "R", "S", "M", "I", "B", "U", "T", "N"]; //INSTRUMENT
+  const slova2 = ["S", "N", "O", "J", "P", "R", "Š", "D", "A", "E", "B", "T"]; //PRAVEDNOST
   //BROJEVI
   const brojevi1 = [
-    [7, 7, 2],
-    [5, 6, 7, 4, 20, 75],
+    [3, 1, 1],
+    [9, 9, 1, 3, 15, 50],
   ];
   const brojevi2 = [
-    [1, 3, 9],
-    [4, 5, 4, 6, 15, 75],
+    [1, 4, 7],
+    [1, 1, 8, 9, 10, 25],
   ];
   //KORAK PO KORAK
   const korak1 = [
-    `Može se odnositi na kalijum ili gvoždje...`,
-    `...Energiju...`,
-    `...Različite hormone...`,
-    `...Skuvane špagete...`,
-    `...Ili kilograme...`,
-    `Može da bude tehnološki.`,
-    `Prema poslovici, od njega glava ne boli.`,
-  ]; //POREZ
+    `Može da bude rezerva.`,
+    `Ima električnu varijantu.`,
+    `Ima i živu varijantu.`,
+    `Može imati veze s provlačenjem.`,
+    `Generalno služi za zaštitu...`,
+    `... ali često može da se preskoči...`,
+    `... zbog čega je ponekad od bodljikave žice.`,
+  ]; //OGRADA
   const korak2 = [
-    `Imaju ga operativni sistemi.`,
-    `Imaju ga gradovi.`,
-    `Koren je prideva u značenju "Koncizan".`,
-    `Ime je filma o bombardovanju središta zemlje.`,
-    `Imaju ga atomi.`,
-    `Imaju ga koštice različitog voća.`,
-    `Latinski sinonim za njega je "Nukleus".`,
-  ]; //SNAGA
+    `Ima svog čoveka.`,
+    `Ima svoju stjuardesu.`,
+    `U romanu smo na njoj nakratko predivni.`,
+    `U nazivu drugog romana je semolj.`,
+    `Može da bude država.`,
+    `U nazivu dokumentarne serije je planeta`,
+    `Osnova je reči zemljouz i zemljopis.`,
+  ]; //ZEMLJA
   //SKOCKO
-  const skocko1 = ["6", "5", "4", "4"];
-  const skocko2 = ["2", "3", "2", "3"];
+  const skocko1 = ["5", "5", "6", "2"];
+  const skocko2 = ["1", "6", "1", "6"];
   //KO ZNA ZNA
   //SPOJNICE
   const spojnice1 = [
     [
-      "Imperator",
-      "Integral",
-      "Italik",
-      "Irigator",
-      "Inspicijent",
-      "Ilativ",
-      "Influks",
-      "Inkubus",
-      "Inciziv",
-      "Invar",
+      "IVAN IV GROZNI",
+      "SULEMAN VELIČANSTVENI",
+      "KARLO V",
+      "HENRI VIII",
+      "BABUR",
+      "FRANSOA I",
+      "ŽOAO III",
+      "MONTEZUMA II",
+      "ATAVALPA",
+      "ŽIGMUND II AVGUST",
     ],
     [
-      "Zub sekutić", //1
-      "Kosa štamparska slova", //2
-      "Saradnik u pozorištu", //3
-      "Posuda za ispiranje delova tela", //4
-      "Uticaj, upliv, delovanje", //5
-      "Vrhovni vladar, car", //6
-      "Pojam iz matematičke analize", //7
-      "Legura čelika i nikla", //8
-      "Vrsta muškog demona", //9
-      "Padež ugrofinskom jeziku", //10
+      "ASTEČKO CARSTVO", //1
+      "POLJSKA I LITVANIA", //2
+      "CARSTVO INKA", //3
+      "OSMANSKO CARSTVO", //4
+      "MOGULSKO CARSTVO", //5
+      "SVETO RIMSKO CARSTVO", //6
+      "PORTUGALIA", //7
+      "ENGLESKA", //8
+      "FRANCUSKA", //9
+      "RUSIJA", //10
     ],
-    ["6", "7", "2", "4", "3", "10", "5", "9", "1", "8"],
-  ];
+    ["10", "4", "6", "8", "5", "9", "7", "1", "3", "2"],
+  ]; // VLADARI IZ 16. VEKA I NIHOVE DRŽAVE
   const spojnice2 = [
     [
-      "Presovati",
-      "Plandovati",
-      "Pečalbaritit",
-      "Pledirati",
-      "Pasirati",
-      "Perforirati",
-      "Pabirčiti",
-      "Profanisati",
-      "Pulverizovati",
-      "Pirjaniti",
+      "ANKONA",
+      "ANKARA",
+      "ASMARA",
+      "ALKMAR",
+      "AVEIRO",
+      "AGADEZ",
+      "ABICAN",
+      "ALMATI",
+      "ANADIR",
+      "AGADIR",
     ],
     [
-      "Raditi u tudjini", //1
-      "Skrnaviti, sramotiti", //2
-      "Zastupati neku stvar", //3
-      "Skupljati iz više izovra", //4
-      "Bušiti, probijati rupice", //5
-      "Pritiskati radi ravnanja", //6
-      "Cediti hranu kroz sito", //7
-      "Odmarati se, izležavati se", //8
-      "Kuvati jelo u pari, dinstati", //9
-      "Pretvarati u prah, raspršivati", //10
+      "ITALIJA", //1
+      "ERITREJA", //2
+      "NIGER", //3
+      "PORTUGALIJA", //4
+      "KAZAHSTAN", //5
+      "OBALA SLONOVAČE", //6
+      "HOLANDIJA", //7
+      "TURKSA", //8
+      "MAROKO", //9
+      "RUSIJA", //10
     ],
-    [6, 8, 1, 3, 7, 5, 4, 2, 10, 9],
-  ];
+    ["1", "8", "2", "7", "4", "3", "6", "5", "10", "9"],
+  ]; //ŠESTOSLOVNI GRADOVI NA „A" I NIHOVE DRŽAVE
   //ASOCIJACIJE
   const asocijacije1 = [
-    ["Društvo", "Bananica", "Čorba", "Euro", "Krem"],
-    ["Američka", "Španska", "Krompir", "Meso", "Pita"],
-    ["Crna", "Bilijar", "Jama", "Kaiš", "Rupa"],
-    ["Zub", "Litar", "Kafa", "Telo", "Mleko"],
-    "Sir",
+    ["BAS", "PEVAČ", "PODIZANJE", "DOBAR", "GLAS"],
+    ["JAKNA", "GARNITURA", "SVRAB", "KOST", "KOŽA"],
+    ["BANANICA", "ČORBA", "SIR", "DRUŠTVO", "KREM"],
+    ["USTA", "POVRŠINA", "VODONIK", "KISEONIK", "VODA"],
+    "BOJA",
   ];
   const asocijacije2 = [
-    ["Groznica", "Semafor", "Pun", "Prazan", "Stadion"],
-    ["Tepih", "Bicikl", "Koza", "Slava", "Staza"],
-    ["Veliko", "Peta", "Prsti", "Taban", "Stopalo"],
-    ["Sparta", "Kičma", "Komisija", "Postupak", "Disciplina"],
-    "Atletika",
+    ["SPAVANJE", "FAZA", "ANTONIO", "SALVADOR", "SAN"],
+    ["DIMNJAK", "PLIVANJE", "VUNA", "GRČKO SLOVO", "KAPA"],
+    ["RUKOMET", "RAGBI", "TIM", "CENTAR", "SPORT"],
+    ["REVOLUCIJA", "VODOLIJA", "RIBE", "ZALJUBLJENI", "FEBRUAR"],
+    "ZIMA",
   ];
   const [active, setActive] = useState(0);
   return (

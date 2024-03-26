@@ -27,3 +27,7 @@
 .red-active {
   background-color: rgba(64, 202, 223, 0.607);
 }
+
+.correct {
+  background-color: green;
+}
